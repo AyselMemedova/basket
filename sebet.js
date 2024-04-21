@@ -55,7 +55,7 @@ for (let i = 0; i < products.length; i++) {
         </div>
         </div>
     </div>
-    `;
+    `
 }
 
 let sebet = [];
@@ -64,7 +64,7 @@ if (localStorage.getItem("sebet")) {
   sebet = JSON.parse(localStorage.getItem("sebet"));
 }
 
-// basketCount.innerHTML = `${sebet.length}`;
+basketCount.innerHTML = `${sebet.length}`;
 
 function addToArr(id) {
   const mehsul = sebet.find((x) => x.id == id);
